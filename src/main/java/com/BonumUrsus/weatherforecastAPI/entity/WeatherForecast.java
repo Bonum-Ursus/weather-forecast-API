@@ -1,5 +1,6 @@
 package com.BonumUrsus.weatherforecastAPI.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
 import javax.persistence.*;
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @RequiredArgsConstructor
 @NoArgsConstructor
 @ToString
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class WeatherForecast {
 
     @Id
